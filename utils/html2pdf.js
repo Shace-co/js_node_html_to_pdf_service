@@ -39,6 +39,9 @@ async function generatePdf(file, options, callback) {
     });
   }
 
+  await page.mainFrame().addStyleTag({
+    'content': 'font-family: arial !important; color: black!important'
+  });
   return Promise.props(page.pdf(options))
     .then(async function(data) {
        await browser.close();
