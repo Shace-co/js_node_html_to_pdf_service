@@ -43,7 +43,7 @@ app.get('/url',async (req, res) => {
         let options = { 
             format: 'A4',
             headless: true,
-            args: ['--disable-dev-shm-usage'],
+            args: ['--disable-dev-shm-usage --no-sandbox'],
             displayHeaderFooter: true,
             headerTemplate: `<h1 style="background:black; color:white; margin:0; padding:6px; font-size: 24px;">Testing Header</h1>`,
             footerTemplate: `<h1 style="background:black; color:white; margin:0; padding:6px; font-size: 24px;">Testing Footer</h1>`,
