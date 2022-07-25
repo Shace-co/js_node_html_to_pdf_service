@@ -53,8 +53,6 @@ app.get('/url',async (req, res) => {
                 right: "30px",
                 left: "30px",
               }
-      
-
         };
 
         let file = { url: req.body.url };
