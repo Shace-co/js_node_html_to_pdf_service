@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  
+  html_2_pdf_service:
+    container_name: "html2pdf.6d.com.sa"
+    build:
+      context: .
+    ports:
+      - "3518:8080"
