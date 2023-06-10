@@ -13,9 +13,17 @@ To use this service, you must have Node.js installed on your system. Then, follo
 
 ## Usage
 
-To use the service, you need to make a GET request to the `http://localhost:3000/url` endpoint with the url of the html page you would like to convert in the `url` parameter. The service will return a PDF file.
+Make a get request with a json body to the end point `http://localhost:3000/url`
 
+json body:
+
+```json
+{
+    "url":"http://google.com",
+    "filename":"haha.pdf"
+}
+```
 
 ## Contributing
-Contributions are welcome! If you have an idea for a new feature or want to report a bug, please open an issue on GitHub. Pull requests are also welcome.
 
+Contributions are welcome! If you have an idea for a new feature or want to report a bug, please open an issue on GitHub. Pull requests are also welcome.

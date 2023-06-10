@@ -16,14 +16,12 @@ app.get('/url',async (req, res) => {
     console.log('before errors')
     let errors = [];
 
-
     // if URL is not provided
-    // if filename is not provided
-
     if(typeof req.body.url == 'undefined'){
         errors.push("505051 Request is not structured properly");
     }
 
+    // if filename is not provided
     if(typeof req.body.filename == 'undefined'){
         errors.push("505052 Request is not structured properly");
     }
